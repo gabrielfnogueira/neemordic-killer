@@ -50,3 +50,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # haml
 gem 'haml'
 gem 'haml-rails'
+
+# boootstrap - to make it beautiful
+gem 'bootstrap-sass'
+
+# devise - for user/login
+gem 'devise'
