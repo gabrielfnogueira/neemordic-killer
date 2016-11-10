@@ -1,4 +1,5 @@
 class GunsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_gun, only: [:show, :edit, :update, :destroy]
 
   # GET /guns
