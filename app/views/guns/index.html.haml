@@ -1,0 +1,21 @@
+%h1 Listing guns
+
+%table
+  %thead
+    %tr
+      %th Name
+      %th
+      %th
+      %th
+
+  %tbody
+    - @guns.each do |gun|
+      %tr
+        %td= gun.name
+        %td= link_to 'Show', gun
+        %td= link_to 'Edit', edit_gun_path(gun)
+        %td= link_to 'Destroy', gun, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Gun', new_gun_path

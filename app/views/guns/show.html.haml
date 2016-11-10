@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @gun.name
+
+= link_to 'Edit', edit_gun_path(@gun)
+\|
+= link_to 'Back', guns_path
